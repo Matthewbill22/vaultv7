@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Verdana', 'Arial', sans-serif !important;
+  background: #0d2e21;
+background: -webkit-linear-gradient(19deg, rgba(13, 46, 33, 1) 0%, rgba(35, 77, 52, 1) 35%, rgba(99, 93, 36, 1) 100%);
+background: -moz-linear-gradient(19deg, rgba(13, 46, 33, 1) 0%, rgba(35, 77, 52, 1) 35%, rgba(99, 93, 36, 1) 100%);
+background: linear-gradient(19deg, rgba(13, 46, 33, 1) 0%, rgba(35, 77, 52, 1) 35%, rgba(99, 93, 36, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0D2E21", endColorstr="#635D24", GradientType=0);
+}
+
+@font-face {
+  font-family: "Renogare";
+  src: url("https://db.onlinewebfonts.com/t/f796ab86e6548871762197b9647bd575.eot");
+  src: url("https://db.onlinewebfonts.com/t/f796ab86e6548871762197b9647bd575.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/f796ab86e6548871762197b9647bd575.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/f796ab86e6548871762197b9647bd575.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/f796ab86e6548871762197b9647bd575.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/f796ab86e6548871762197b9647bd575.svg#Renogare Regular")format("svg");
+}
+
+.text-3xl, .text-5xl {
+  font-family: 'Renogare', 'Helvetica', sans-serif !important;
+}
+
+i {
+  margin-right: 0.25em !important;
+}
+
+#canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    pointer-events: none;
+}
+
+#mainstuff {
+  z-index: 1000 !important;
+}
+
+#comets{
+  position:absolute;
+  top:-150px;
+  width:100vw;
+  text-align: left; 
+  height: 100%; 
+  overflow:hidden;
+  z-index: -5;
+}
+
+#comets i {
+  display: inline-block;
+  width: 250px;
+  height: 150px;position:absolute;
+  border-radius: 5% 40% 70%;
+  box-shadow: inset 0px 0px 1px #294b67;
+  border: 1px solid #333;
+  z-index: -1;
+  background-color: #fff;
+  opacity: .7;
+  -webkit-animation: falling 10s 0s infinite;
+  -webkit-animation-timing-function:ease-in;
+}
+
+
+#comets i:nth-child(1){
+  left: 50vw;
+  height:73px; 
+  width:3px;
+  background-color: #fff;
+}
+#comets i:nth-child(3){
+  height:11px; 
+  width:3px;
+  -webkit-animation: falling3 8s 3s infinite;
+  left: 10vw;
+background-color: #fff;
+}
+#comets i:nth-child(2){
+  -webkit-animation: falling2 6s 1s infinite;
+  left: 30vw;
+  height:70px; 
+  width:4px;
+  background-color: #fff;
+
+}
+
+@-webkit-keyframes falling {
+
+  0% {
+    -webkit-transform: translate3d(100px,0px,0px) rotate(160deg);
+  }
+
+  3% {
+    -webkit-transform:
+    translate3d(450px,900px,0) rotate(160deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform:
+    translate3d(450px,900px,0) rotate(160deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes falling3 {
+ 0% {
+  -webkit-transform: translate3d(0,0,0) rotate(150deg);
+}
+
+10% {
+  -webkit-transform: translate3d(430px,640px,0) rotate(150deg);
+  opacity: 0;
+}
+
+100% {
+  -webkit-transform: translate3d(430px,640px,0) rotate(150deg);
+  opacity: 0;
+}
+}
+
+@-webkit-keyframes falling2 {
+ 0% {
+  -webkit-transform:translate3d(100px,0,0) rotate(130deg);
+}
+
+15% {
+  -webkit-transform:translate3d(800px,580px,0) rotate(130deg);
+  opacity: 0;
+}
+
+100% {
+  -webkit-transform: translate3d(800px,680px,0) rotate(180deg);
+  opacity: 0;
+}
+}
+* {
+  scrollbar-width: thin !important;
+  scrollbar-color: #aaa #5e5e5e !important;
+}
+*::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+*::-webkit-scrollbar-track {
+  background: #f0f0f0 !important;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #aaa !important;
+  border-radius: 4px !important;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AJH's Vault V6.5</title>
+  <meta name="description" content="An educational resource for students, featuring interactive tools and web-based applications to enhance learning." />
+  <link rel="icon" href="/icon.png" type="image/png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AJH's Vault V6.5" />
+  <meta property="og:description" content="Explore a variety of student-friendly tools and resources to enrich your learning experience." />
+  <meta property="og:image" content="/icon.png" />
+  <meta property="og:url" content="https://ajh.college" />
+  <meta property="og:site_name" content="AJH's Vault V6.5" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AJH's Vault V6.5" />
+  <meta name="twitter:description" content="A collection of web tools and educational applications for students." />
+  <meta name="twitter:image" content="/icon.png" />
+  <meta name="theme-color" content="#000000" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/index.css">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-03F8ZHB8D8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-03F8ZHB8D8');
+  </script>
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6084312783725533" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-black text-white flex items-center justify-center min-h-screen">
+
+  <!-- Play Button -->
+  <button id="play-btn" class="px-10 py-5 border border-neutral-400/50 rounded-lg hover:bg-black/50 transition">
+    Play
+  </button>
+
+  <script>
+    // Function to open the game in UV in fullscreen (without opening a new tabf)
+    function openInUV(url) {
+      if (typeof __uv$config === 'undefined') {
+        alert('Ultraviolet scripts not loaded!');
+        return;
+      }
+
+      const encodedUrl = __uv$config.encodeUrl(url);
+      const fullPath = __uv$config.prefix + encodedUrl;
+
+      // Redirect to the UV-proxied URL, and try fullscreenn
+      window.location.href = fullPath;
+    }
+
+    // Play button event listener
+    document.getElementById('play-btn').addEventListener('click', () => {
+      openInUV('https://www.autistici.org/burnedprojects/NoiseUpdate/');
+    });
+  </script>
+
+  <!-- UV Scripts -->
+  <script src="/uv/uv.bundle.js" charset="UTF-8" defer></script>
+  <script src="/uv/uv.config.js" charset="UTF-8" defer></script>
+  <script src="register-sw.js" charset="UTF-8" defer></script>
+
+</body>
+
+</html>

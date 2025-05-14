@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <link rel="stylesheet" href="/index.css">
+      
+      <link rel="stylesheet" href="../assets/font-awesome/css/all.css">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="https://kit.fontawesome.com/a4d0d1241b.js" crossorigin="anonymous"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>AJH's Vault V6.5</title>
+      <meta name="description" content="An educational resource for students, featuring interactive tools and web-based applications to enhance learning.">
+      <link rel="icon" href="/icon.png" type="image/png">
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="AJH's Vault V6.5">
+      <meta property="og:description" content="Explore a variety of student-friendly tools and resources to enrich your learning experience.">
+      <meta property="og:image" content="icon.png">
+      <meta property="og:url" content="https://ajh.college">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="AJH's Vault V6.5">
+      <meta name="twitter:description" content="A collection of web tools and educational applications for students.">
+      <meta name="twitter:image" content="icon.png">
+      <meta property="og:site_name" content="AJH's Vault V6.5">
+      <meta name="theme-color" content="#000000">
+   
+      <!-- Structured Data Schema -->
+      <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "EducationalOrganization",
+          "name": "AJH's Vault V6.5 - Learning Hub",
+          "url": "https://ajh.college",
+          "logo": "icon.png",
+          "description": "An interactive hub for students to access various web-based tools and applications.",
+          "sameAs": [
+              "https://www.instagram.com/@ajhsvault",
+              "https://discord.com/invite/UnDrzQQksw"
+          ]
+      }
+      </script>
+      <script src="
+https://cdn.jsdelivr.net/npm/tailwindcss@4.1.4/dist/lib.min.js
+"></script>
+      <script>
+          tailwind.config = {
+              theme: {
+                  extend: {
+                      keyframes: {
+                          'de-entrance': {
+                              '0%': { transform: 'translateX(-100vw)', opacity: '0' },
+                              '50%': { transform: 'translateX(0em)', opacity: '1' },
+                              '100%': { transform: 'translateX(0em)', opacity: '1' }
+                          }
+                      },
+                      animation: {
+                          'de-entrance': 'de-entrance 2s forwards'
+                      }
+                  }
+              }
+          }
+      </script>
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-03F8ZHB8D8%22%3E" type="a6cbfc5760b43ebb773269cb-text/javascript">
+         </script>
+         <script type="a6cbfc5760b43ebb773269cb-text/javascript">
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){
+         dataLayer.push(arguments);
+         }
+         gtag('js', new Date());
+         gtag('config', 'G-03F8ZHB8D8');
+         </script>
+
+         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6084312783725533"
+     crossorigin="anonymous"></script>
+         
+   </head>
+   <body class="bg-black" onload="registerServiceWorker()">
+
+<div id="loading-screen" class="fixed inset-0 z-[9999] bg-black flex flex-col items-center justify-center text-white">
+    <div class="w-48 h-48 border-[20px] border-white border-t-transparent rounded-full animate-spin mb-6"></div>
+    <p class="text-4xl font-semibold tracking-wide">Loading AJH’s Vault...</p>
+  </div>
+  <script>
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loading-screen");
+      loader.classList.add("opacity-0", "transition-opacity", "duration-500");
+  
+      setTimeout(() => {
+        loader.remove();
+        document.body.classList.remove("overflow-hidden");
+      }, 500);
+    });
+  </script>
+  
+      <canvas id="canvas"></canvas>
+      <div class="text-white min-h-screen flex flex-col items-center justify-center p-4 relative overflow-hidden">
+      <div class="container text-center max-w-md relative">
+         <div class="flex items-center justify-center space-x-4">
+             <div id="logo" class="text-5xl font-bold opacity-0 animate-de-entrance bg-clip-text text-transparent bg-gradient-to-r from-gray-300 to-white">
+                 Vault v6.5
+             </div>
+         </div>
+
+              <div class="grid grid-cols-3 gap-2 mb-2 mt-4">
+                
+                <form id="uv-form" class="col-span-2">
+                  <input id="uv-search-engine" value="https://duckduckgo.com/search?q=%s" type="hidden"/> 
+                  <input 
+                      id="uv-address" 
+                      type="text" 
+                      placeholder="🔍 The fastest static proxy, ever." 
+                      required
+                      class="w-full px-4 py-2 bg-transparent border border-neutral-400/50 rounded-lg text-white placeholder-neutral-300 focus:outline-none focus:ring-2 focus:ring-neutral-400 focus:bg-black/50 transition-all duration-250"
+                  />
+              </form>
+                
+                <a 
+                    href="/g" 
+                    class="py-2 bg-transparent border border-neutral-400/50 rounded-lg text-white hover:bg-black/50 transition-all duration-250 self-center"
+                ><i class="fa-solid fa-gamepad"></i> Games
+                </a>
+            
+                <a 
+                    href="/a" 
+                    class="py-2 bg-transparent border border-neutral-400/50 rounded-lg text-white hover:bg-black/50 transition-all duration-250 self-center"
+                ><i class="fa-brands fa-app-store-ios"></i> Apps 
+                </a>
+
+                <a 
+                href="/education" 
+                class="py-2 bg-transparent border border-neutral-400/50 rounded-lg text-white hover:bg-black/50 transition-all duration-250 self-center"
+            ><i class="fa-solid fa-school"></i> Education
+            </a>
+        
+                <a 
+                href="/t" 
+                class="py-2 bg-transparent border border-neutral-400/50 rounded-lg text-white hover:bg-black/50 transition-all duration-250 self-center"
+            ><i class="fa-solid fa-screwdriver-wrench"></i> Tools
+            </a>
+            <a 
+            href="https://docs.google.com/document/d/14LlAmWkhchNJ83BhM3KFEk4MLhu5HERqlwljGJs6fN4/view?usp=sharing" 
+            class="py-2 bg-transparent border border-neutral-400/50 rounded-lg text-white hover:bg-black/50 transition-all duration-250 self-center"
+        ><i class="fa-solid fa-link"></i> Link Portal</a>
+        </a>
+        <a 
+        href="/vm" 
+        class="py-2 bg-transparent border border-neutral-400/50 rounded-lg text-white hover:bg-black/50 transition-all duration-250 self-center"
+    ><i class="fa-solid fa-desktop"></i> VM (beta)
+    </a>
+    <a 
+    href="/ia" 
+    class="py-2 bg-transparent border border-neutral-400/50 rounded-lg text-white hover:bg-black/50 transition-all duration-250 self-center"
+><i class="fa-solid fa-robot"></i> AI
+</a>
+<a 
+href="/c" 
+class="py-2 bg-transparent border border-neutral-400/50 rounded-lg text-white hover:bg-black/50 transition-all duration-250 self-center"
+><i class="fa-solid fa-message"></i> Chatroom
+</a>
+<div class="flex items-center bg-red-900 border-t-4 border-red-700 col-span-2" role="alert">
+      <a class="text-xl" href="https://chng.it/s5StkhSqpJ">CLICK TO SIGN THE PETITION</a>
+  </div>
+</div>
+            </div>
+
+              <span class="text-neutral-400 text-sm quote-thing">
+              </span>
+  
+              <div class="desc left-margin text-neutral-400">
+                  <p id="uv-error"></p>
+                  <pre id="uv-error-code"></pre>
+              </div>
+      </div>
+   </div>
+   <div class="fixed bottom-0 p-4 text-neutral-500">
+      <a class="underline" href="https://discord.gg/RxDCZz7E5R">discord.gg/RxDCZz7E5R</a>
+      <a class="ml-10 underline" href="/privacy-policy">Privacy policy</a>
+      <a class="ml-10 underline" href="/contact">Contact</a>
+      <a class="ml-10 underline" href="/partners">Partners</a>
+   </div>
+
+   <div id="comets">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+  
+      <script src="/uv/uv.bundle.js" charset="UTF-8" defer></script>
+      <script src="/uv/uv.config.js" charset="UTF-8" defer></script>
+      <script src="/register-sw.js" charset="UTF-8" defer></script>
+      <script src="/search.js" charset="UTF-8" defer></script>
+      <script src="/index.js" charset="UTF-8" defer></script>
+      <script src="/quotes.js" charset="UTF-8" defer"></script>
+      <script>
+        function registerServiceWorker() {
+          "use strict";
+          /**
+           * Distributed with Ultraviolet and compatible with most configurations.
+           */
+          const stockSW = "/uv-sw.js";
+  
+          /**
+           * List of hostnames that are allowed to run serviceworkers on http:
+           */
+          const swAllowedHostnames = ["localhost", "127.0.0.1"];
+  
+          /**
+           * Global util
+           * Used in 404.html and index.html
+           */
+          async function registerSW() {
+            if (
+              location.protocol !== "https:" &&
+              !swAllowedHostnames.includes(location.hostname)
+            )
+              throw new Error("Service workers cannot be registered without https.");
+  
+            if (!navigator.serviceWorker)
+              throw new Error("Your browser doesn't support service workers.");
+  
+            // Ultraviolet has a stock `sw.js` script.
+            await navigator.serviceWorker.register(stockSW, {
+              scope: __uv$config.prefix,
+            });
+          }
+        }
+      </script>
+  </body>
+
+  
+</html>

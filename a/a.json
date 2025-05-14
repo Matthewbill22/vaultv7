@@ -1,0 +1,88 @@
+[
+    {
+        "title": "TikTok",
+        "imgSrc": "tiktok.png",
+        "link": "https://tiktok.com"
+      },
+    {
+      "title": "Xbox",
+      "imgSrc": "xbox.png",
+      "link": "https://xbox.com/play"
+    },
+    {
+        "title": "YouTube",
+        "imgSrc": "youtube.png",
+        "link": "https://youtube.com"
+      },
+      {
+        "title": "Snapchat",
+        "imgSrc": "snapchat.png",
+        "link": "https://www.snapchat.com/web/"
+      },
+      {
+        "title": "P-Stream",
+        "imgSrc": "pstream.png",
+        "link": "https://pstream.org/"
+      },
+      {
+        "title": "Discord",
+        "imgSrc": "discord.png",
+        "link": "https://discord.com/channels/@me"
+      },
+    {
+      "title": "VSC",
+      "imgSrc": "vsc.png",
+      "link": "https://vscode.dev/"
+    },
+    {
+        "title": "ChatGPT",
+        "imgSrc": "chatgpt.jpg",
+        "link": "https://chatgpt.com"
+      },
+      {
+        "title": "Google",
+        "imgSrc": "google.png",
+        "link": "https://google.com"
+      },
+    {
+        "title": "SpaceHey",
+        "imgSrc": "spacehey.jpg",
+        "link": "https://spacehey.com"
+      },
+      {
+        "title": "Wikipedia",
+        "imgSrc": "wikipedia.png",
+        "link": "https://en.wikipedia.org/wiki/Main_Page"
+      },
+      {
+        "title": "SoundCloud",
+        "imgSrc": "soundcloud.svg",
+        "link": "https://soundcloud.com/"
+      },
+      {
+        "title": "Brainly",
+        "imgSrc": "brainly.png",
+        "link": "https://brainly.com/app/tasks/landing"
+      },
+      {
+        "title": "Cobalt",
+        "imgSrc": "cobalt.png",
+        "link": "https://cobalt.tools"
+      },
+      {
+        "title": "Coconut",
+        "imgSrc": "coconut.png",
+        "link": "https://coconut.smartfoloo.space/"
+      },
+      {
+        "title": "QuillBot",
+        "imgSrc": "quillbot.png",
+        "link": "https://quillbot.com/"
+      },
+      {
+        "title": "szvyflix",
+        "imgSrc": "szvyflix.ico",
+        "link": "https://szvyflix.vercel.app/"
+      }
+  ]
+  
